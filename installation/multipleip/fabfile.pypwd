@@ -1,0 +1,7 @@
+from fabric.api import *
+env.user='ndot'
+env.passwd='rAnGErs@S%s@dm!'
+env.hosts=['192.168.3.59']
+def pwd():
+    sudo('echo "hduser:janusid" | chpasswd')
+
